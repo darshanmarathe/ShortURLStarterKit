@@ -1,0 +1,40 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+   <script  language="javascript" type="text/javascript" src="../jQuery-latest.js"></script>  
+   <script  language="javascript" type="text/javascript" src="jQuery-latest.js"></script>  
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+            <tr>
+                <td colspan="2" style="height: 37px; color: aqua; background-color: olive; border-bottom: silver thick solid; padding-left: 5px;">
+                    Put Your Header here</td>
+            </tr>
+            <tr>
+                <td style="width: 200px; vertical-align: top; height: 474px; border-right: black thin solid; padding-right: 0px; padding-left: 5px; padding-bottom: 2px; margin-right: 2px; padding-top: 2px;">
+                    <strong>
+                    Put the Menu<br />
+                        Follow Me On<br />
+                    </strong><a href="http://www.twitter.com/darshanmarathe" target="_blank">Twitter</a><br />
+                    <a href="http://darshanmarathe.blogspot.com" target="_blank">Blog</a><br />
+                    <a href="mailto:darshanmarathe@zoho.com">Email</a></td>
+                <td style="vertical-align: top; height: 474px">
+                     <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="color: aqua; background-color: olive; padding-left: 5px;">
+                    Your Footer</td>
+            </tr>
+        </table>
+       
+    </div>
+    </form>
+</body>
+</html>
